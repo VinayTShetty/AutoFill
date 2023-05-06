@@ -1,10 +1,8 @@
-import 'package:autofill/screeens/signup.dart';
 import 'package:flutter/material.dart';
-void main() => runApp(const MyApp());
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Signup extends StatelessWidget {
+  const Signup({Key? key}) : super(key: key);
 
-  static const String _title = 'Auto Fill';
+  static const String _title = 'Sign UP';
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +37,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
-                  'Auto Fill',
+                  'Sign Up Filed',
                   style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.w500,
@@ -100,10 +98,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     style: TextStyle(fontSize: 20),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Signup()),
-                    );
+
                   },
                 )
               ],
